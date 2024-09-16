@@ -29,7 +29,14 @@ This Flask application provides a web interface to:
     cd guard
     ```
 
-2. Install the required dependencies:
+2. Create a virtual environment:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate # For Linux
+    venv\Scripts\activate # For Windows
+    ```
+
+3. Install the required dependencies:
     ```sh
     pip install -r requirements.txt
     ```
