@@ -137,5 +137,16 @@ def security_guard():
         speak_text("No face detected. Please try again.")
         security_guard()  # Retry scanning
 
-# Run the security guard
-security_guard()
+if __name__ == '__main__':
+    while True:
+        security_guard()
+        speak_text("Would you like to continue? Say yes or no.")
+        response = listen_to_user()
+        if 'no' in response.lower():
+            speak_text("Goodbye!")
+            break
+        elif 'yes' in response.lower():
+            continue
+        else:
+            speak_text("Sorry, I didn't understand that. Goodbye!")
+            break
