@@ -41,6 +41,8 @@ To start the Smart Security Guard system:
 ```sh
 python main.py
 ```
+
+### Running app.py
 To start web interface:
 ```sh
 python app.py
